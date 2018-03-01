@@ -8,9 +8,32 @@
         font-family: Arial, sans-serif;
         margin: 3rem;
       }
+
+      a {
+        padding: 1rem;
+        background: ghostwhite;
+        text-decoration: none;
+        color: crimson;
+        transition: all .2s;
+      }
+
+      a:hover {
+        background: crimson;
+        color: ghostwhite;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
     </style>
   </head>
   <body>
+    <p>
+      <a href="/">Home</a>
+      <a href="/posts">All Posts</a>
+      <a href="/posts/new">New Post</a>
+    </p>
+
     <%= yield %>
   </body>
 </html>
